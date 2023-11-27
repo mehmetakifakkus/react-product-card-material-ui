@@ -2,7 +2,7 @@ import React from "react";
 import { listProducts } from "../apis/listProducts";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Grid } from "@mui/material";
-import ProductCard from "./ProductsCard";
+import ProductCard from "./productCard/ProductsCard";
 import { Product } from "./types";
 
 type Props = {};
