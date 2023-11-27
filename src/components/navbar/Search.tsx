@@ -27,7 +27,7 @@ function Search({ onClick }: Props) {
               onClick={() => {
                 onClick && onClick(searchKey);
               }}
-              className="absolute hidden sm:block top-0 h-12 pt-[10px] right-[-10px] bg-rose-700 cursor-pointer"
+              className="absolute hidden sm:block top-0 h-12 pt-[10px] right-[-10px] bg-rose cursor-pointer"
             >
               <span className=" mx-8 text-white text-base font-semibold leading-4">
                 Search
