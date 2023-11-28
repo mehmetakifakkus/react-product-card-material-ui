@@ -5,7 +5,6 @@ import { Box, Rating } from "@mui/material";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 import { grey } from "@mui/material/colors";
-import Link from "@mui/joy/Link";
 
 // Product type
 import { Product } from "../types";
@@ -19,17 +18,7 @@ type Props = {
 export default function Info({ rating, setRating, product }: Props) {
   return (
     <CardContent>
-      <Link
-        href="#product-card"
-        fontWeight="md"
-        color="neutral"
-        textColor="text.primary"
-        sx={{ mt: 2.5 }}
-        overlay
-      >
-        {product.name}
-      </Link>
-
+      <span className="text-base text-neutral mt-6">By {product.name}</span>
       <div className="flex gap-1 items-center">
         <Box>
           <Rating
