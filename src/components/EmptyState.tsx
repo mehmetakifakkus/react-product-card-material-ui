@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default function EmptyState({
-  title = "No exact matches found",
+  title = "No product found",
   subtitle = "Press button to list all products!",
 }: Props) {
   const dispatch = useDispatch();
