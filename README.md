@@ -59,16 +59,20 @@ Project also has a mobile mode (covers smart phones and tablet size) which is sh
 - Node.js and npm
 
 ### Installation
-1. **Change the directory:**
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/mehmetakifakkus/react-product-card-material-ui.git
+   ```
+2. **Change the directory:**
    ```sh
    cd react-product-card-material-ui
    ```
-2. **Install Node.js dependencies:**
+3. **Install Node.js dependencies:**
    ```sh
    npm install
    ```
 
-3. **Start the React project:**
+4. **Start the React project:**
    ```sh
    npm start
    ```
