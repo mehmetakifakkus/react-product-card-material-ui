@@ -6,4 +6,12 @@ export interface Product {
   rating: number
   image: string
   discount: string
+  quantity?: number
+}
+
+export interface CartItem {
+  productId: string,
+  quantity: number,
+  name: string,
+  price: number
 }
