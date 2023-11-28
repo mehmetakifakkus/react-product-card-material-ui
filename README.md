@@ -1,7 +1,7 @@
 # E-Commerce Platform Product Page
 
 ## Project Overview and Task
-This task is designed to develop a modern and user-friendly frontend for the BetaLimited e-commerce platform. Candidates are expected to effectively integrate Material-UI components and create a dynamic web application using React.js.
+This task is designed to develop a modern and user-friendly frontend for the BetaLimited e-commerce platform. The project effectively integrates React, Material UI and Redux create a dynamic web application. The application is designed to be responsive and compatible with desktop, tablet, and mobile devices. The application is deployed on Vercel. 
 
 <p align="left" style="margin-top:1rem; border-radius:16px">
   <img width="720" height="auto" alt="screenshots/desktopMode" src="./screenshots/desktop.png">
