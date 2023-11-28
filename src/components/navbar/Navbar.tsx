@@ -1,6 +1,8 @@
+// user defined components
 import Container from "../Container";
 import Logo from "./Logo";
 import Search from "./Search";
+import Cart from "./Cart";
 
 function Navbar() {
   return (
@@ -9,11 +11,8 @@ function Navbar() {
         <Container>
           <div className="flex items-center justify-between gap-3 md:g-0">
             <Logo />
-            <Search
-              onClick={(searchKey) => {
-                console.log("Search clicked: ", searchKey);
-              }}
-            />
+            <Search />
+            <Cart />
           </div>
         </Container>
       </div>

@@ -1,12 +1,21 @@
 import { useState } from "react";
 import { BiSearch } from "react-icons/bi";
+// redux
+import { useDispatch } from "react-redux";
+import { postTypes } from "../../redux/actionTypes";
 
-type Props = {
-  onClick?: (searchKey: string) => void;
-};
-
-function Search({ onClick }: Props) {
+function Search() {
+  const dispatch = useDispatch();
   const [searchKey, setSearchKey] = useState("");
+
+  const handleSearch = (searchKey: string) => {
+    if (searchKey !== "")
+      dispatch({
+        type: postTypes.SEARCH_PRODUCTS,
+        payload: { searchKey },
+      });
+    else dispatch({ type: postTypes.GET_PRODUCTS });
+  };
 
   return (
     <div className="w-[280px] sm:w-[420px] md:w-[600px] mx-auto border-2 rounded-full border-neutral-400 h-12 overflow-hidden md:max-w-2xl">
@@ -22,10 +31,14 @@ function Search({ onClick }: Props) {
               onChange={(e) => {
                 setSearchKey(e.target.value);
               }}
+              // on press enter
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSearch(searchKey);
+              }}
             />
             <div
               onClick={() => {
-                onClick && onClick(searchKey);
+                if (searchKey !== "") handleSearch(searchKey);
               }}
               className="absolute hidden sm:block top-0 h-12 pt-[10px] right-[-10px] bg-rose cursor-pointer"
             >
