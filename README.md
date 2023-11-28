@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# E-Commerce Platform Product Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview and Task
+This task is designed to develop a modern and user-friendly frontend for the BetaLimited e-commerce platform. Candidates are expected to effectively integrate Material-UI components and create a dynamic web application using React.js.
 
-## Available Scripts
+<p align="left" style="margin-top:1rem; border-radius:16px">
+  <img width="720" height="auto" alt="screenshots/desktopMode" src="./screenshots/desktop.png">
+</p>
 
-In the project directory, you can run:
+---
+## Features
+- **Product viewer:** Lists all products available and add to cart.
+- **Search product:** Search for products by name.
+- **Responsive Design:** Interface design using React.js and Material-UI libraries compatible with desktop, tablet, and mobile devices.
+- **Cart:** Displays the number of items in the cart as well as the product details.
+- **Context Management with Redux-Saga:** Manage the state of the application using Redux-Saga. 
 
-### `npm start`
+## Tech stack
+- `React:` A JavaScript library for building user interfaces.
+- `Redux, Redux-Toolkit:` A predictable state container for JavaScript apps.
+- `Redux-Saga:` A redux middleware library that is designed to make handling side effects in your redux app nice and simple.
+- `Typescript:` Type safe version of Javascript.
+- `Tailwind.css:` A utility-first CSS framework that enables rapid UI development with pre-defined styles and components. Flexbox and Grid structure has been used for creating the layout.
+- `Material-UI:` React components for faster and easier web development.
+- `Axios:` Promise based HTTP client for the browser and node.js.
+- `React-icons`: Include popular icons in your React projects easily with react-icons.
+- `Auto Animate:` Add motion to React apps with a single line of code.
+- **Others:** Git, npm/Yarn, Prettier
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Site
+Check out the [live site](https://react-product-card-material-ui.vercel.app/).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screenshots
+The screenshots of the application are as follows. The application has a desktop mode which is shown below:
 
-### `npm test`
+<p align="left" style="margin-top:1rem">
+  <img width="640" height="auto" alt="screenshots/desktopMode" src="./screenshots/desktop-view.png">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project also has a mobile mode (covers smart phones and tablet size) which is shown below:
 
-### `npm run build`
+<p align="left" style="margin-top:1rem">
+  <img width="640" height="auto" alt="screenshots/mobileMode" src="./screenshots/mobile-tablet-view.png">
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Folder Structure
+- `public`: Contains the static assets used in the application.
+- `src`: Contains the source code of the application.
+  - `components`: Contains reusable React components used throughout the application.
+  - `App.js`: The main React component of the application.
+  - `index.js`: The entry point of the application.
+  - `redux`: Contains the Redux store, reducers, and actions.
+- `screenshots`: Includes screenshots of the application.
+- `tailwind.config.js`: The configuration file for the Tailwind CSS framework.
+- `README.md`: The README file for the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Project Locally
+### Prerequisites
+- Node.js and npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
+1. **Change the directory:**
+   ```sh
+   cd react-product-card-material-ui
+   ```
+2. **Install Node.js dependencies:**
+   ```sh
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the React project:**
+   ```sh
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
+Contributions to the project are welcome! Please follow the standard fork and pull request workflow.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is licensed under the [MIT License](LICENSE.md).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contact
+- Project Link: [https://github.com/mehmetakifakkus/react-product-card-material-ui](https://github.com/mehmetakifakkus/react-product-card-material-ui)
+- Author - [mehmetakifakkus](https://mehmetakifakkus.github.io)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## References
+- [Redux Toolkit](https://redux-toolkit.js.org/tutorials/typescript)
+- [Redux Saga Beginner Tutorial](https://redux-saga.js.org/docs/introduction/BeginnerTutorial.html)
+- [Redux Saga with Typescript](https://redux.js.org/usage/usage-with-typescript)
+- [Redux Saga Documentation](https://redux-saga.js.org/docs/introduction/GettingStarted/)
+- [Redux Saga in React Typescript](https://medium.com/edonec/implement-redux-saga-in-your-react-typescript-project-1d79c4a2d726)
+- [Example app with Redux Saga](https://codesandbox.io/p/sandbox/redux-saga-stoic-euler-cjhgx-cjhgx?file=%2Fsrc%2Fredux%2Fducks%2Fcounter.js)
