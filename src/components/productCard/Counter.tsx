@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import { FiMinus, FiPlus } from "react-icons/fi";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 type Props = {
   quantity: number;
@@ -8,6 +9,8 @@ type Props = {
 };
 
 export default function Counter({ quantity, setQuantity }: Props) {
+  const [parent] = useAutoAnimate({ duration: 100 });
+
   return (
     <Box
       sx={{
@@ -19,6 +22,7 @@ export default function Counter({ quantity, setQuantity }: Props) {
         zIndex: 10,
         justifyContent: "flex-end",
       }}
+      ref={parent}
     >
       {quantity > 0 && (
         <>
